@@ -1,0 +1,26 @@
+.header-harnold{
+  background-color: white;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.08);
+  padding: 25px 0;
+  &__main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.menu{
+  width: 55%;
+  ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    li{
+      list-style: none;
+      a{
+        color: $orange-light;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
