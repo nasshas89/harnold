@@ -2,3 +2,21 @@
     max-width: 1200px;
     margin: auto;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+html {   font-size: 62.5%; }
+
+
+
+.triangle {
+    &::after {
+      content: url("../images/triangle-center.svg");
+        text-align: center;
+    }
+  
+  }
+  
+  

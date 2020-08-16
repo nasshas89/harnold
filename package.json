@@ -1,0 +1,20 @@
+{
+  "name": "harnold",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"https://roots.io/bedrock/\">     <img alt=\"Bedrock\" src=\"https://cdn.roots.io/app/uploads/logo-bedrock.svg\" height=\"100\">   </a> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasshas89/harnold.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nasshas89/harnold/issues"
+  },
+  "homepage": "https://github.com/nasshas89/harnold#readme"
+}

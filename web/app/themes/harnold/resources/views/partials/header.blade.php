@@ -14,5 +14,5 @@
         </nav>        
     </div>    
 </section> 
-@include('home.hero')
-@include('home.menu-picto')    
+
+
