@@ -1,0 +1,32 @@
+.hero-motivation{
+    padding: 80px 0;
+}
+.cards-motivation{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    &__item{
+        box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.2);
+        width: 30%;
+        height: 300px;
+        padding: 15px 30px;
+        border-radius: 2px;
+        position: relative;
+        overflow:hidden;
+        
+    }
+    .image-motivation{
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        z-index: -1;
+        bottom: -16px;
+        right: -62px;
+        
+        img{
+            height: 100%;
+            width: 100%;
+            // object-fit: cover;
+        }
+    }
+}
