@@ -1,7 +1,89 @@
-.name-delivery-form{
-    border-radius: 50px 0 0 50px;
+.form-pro{
+    padding: 50px 0;
+}
+
+
+
+.bloc-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    box-shadow: 0 21px 155px rgba(16,82,133,.1);
+
+
+
+    &__head{
+        background-color: $orange-light;
+        padding: 60px 90px 40px;
+        border-radius: 10px 10px 0 0;
+        h2{
+            color: $bg-blue;
+            letter-spacing: 0.5px;
+            line-height: 1.4;
+            font-weight: 700;
+
+        }
+        p{
+            color: white;
+            line-height: 1.4;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+ .div-name{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     width: 100%;
+     margin-bottom: 15px;
+     margin-top: 25px;
+ }
+
+.name-delivery{
+    border-radius: 50px 0 0 50px !important;
     padding: 18px 35px;
     border: 1px solid #ecf4f8;
     background-color: #f5fbfe;
-    height: 40px;
+    height: 70px;
+    width: 100%;
+}
+
+.username-delivery{
+    border-radius: 0 50px 50px 0;
+    padding: 18px 35px;
+    border: 1px solid #ecf4f8;
+    background-color: #f5fbfe;
+    height: 70px;
+    width: 100%;
+}
+
+.email-delivery{
+    border-radius: 36px;
+    padding: 18px 35px;
+    border: 1px solid #ecf4f8;
+    background-color: #f5fbfe;
+    height: 70px;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+.experience-delivery{
+    border-radius: 36px;
+    padding: 18px 35px;
+    border: 1px solid #ecf4f8;
+    background-color: #f5fbfe;
+    height: 80px;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+
+.div-mail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
