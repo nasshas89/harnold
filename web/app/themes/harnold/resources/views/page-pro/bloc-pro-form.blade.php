@@ -4,7 +4,7 @@
 
     <div class="bloc-form">
         <div class="bloc-form__head">
-            <h2>Commencez à livrer avec Stuart</h2>
+            <h2>Commencez à livrer avec Harnold</h2>
             <p>Pour débuter votre inscription, rien de plus simple : remplissez ce formulaire !</p>
         </div>
         <div class="short-code-form">

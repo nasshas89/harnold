@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="footer__up wrapper">
+  <div class="footer__up wrapper-footer">
     <div class="footer__up__button">
       {{-- logo+button commander --}}
       <div class="logo-div-footer">
@@ -18,7 +18,7 @@
     </div>    
   </div>
   
-  <div class="footer__down wrapper">
+  <div class="footer__down wrapper-footer">
     <div class="footer__down__content">
       <div><a href=""> Mention légale</a></div>
       <div><a href=""> © 2020 Harnold</a></div>
