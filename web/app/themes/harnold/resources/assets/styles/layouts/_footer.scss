@@ -1,0 +1,78 @@
+.footer{
+    background-color: $bg-blue;
+    padding: 72px 0px 70px;
+
+    &__up{
+        p{color: white;}
+        display: flex;
+        flex-direction: row;
+        
+
+        &__button{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            
+            .cta-buy{
+                font-size: 1.3rem;
+                border-radius: 100px;
+                width: max-content;
+                color: $bg-blue;
+                background: $white;
+                padding: 22px 60px;
+                border: none;
+                &:hover{
+                    background-color: $orange-light;
+                    color: white;
+                }
+            
+            }
+            .logo-div-footer{
+                margin-bottom: 40px;
+                .logo-footer{
+                    width: 50px;
+                    object-fit: cover;
+                }
+            } 
+        }
+
+        &__us{
+            background-color: violet;
+            width: 30%;
+        }
+
+        &__link{
+            background-color: green;
+            width: 30%;
+        }
+    }
+
+    &__down{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &::before{
+            content: "";
+            width: 40%;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.473);
+            
+            height: 1px;
+            margin-top: 60px;
+        }
+        a{
+            color: white;
+        }
+        &__content{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 45px;
+            font-size: 1.4rem;
+            width: 30%;
+            
+        }
+        
+    }
+}
+
