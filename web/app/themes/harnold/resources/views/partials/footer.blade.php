@@ -3,7 +3,7 @@
     <div class="footer__up__button">
       {{-- logo+button commander --}}
       <div class="logo-div-footer">
-        <img class="logo-footer" src="@asset('images/building.svg')" alt="" >
+        <img class="logo-footer" src="@asset('images/logo2.svg')" alt="Logo-Harnold" >     
       </div>
       <a href="" class="cta-buy">Commander</a>
     </div>

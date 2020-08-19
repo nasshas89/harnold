@@ -12,6 +12,8 @@
         &__button{
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
             width: 30%;
             
             .cta-buy{
@@ -20,7 +22,7 @@
                 width: max-content;
                 color: $bg-blue;
                 background: $white;
-                padding: 22px 60px;
+                padding: 15px 60px;
                 border: none;
                 &:hover{
                     background-color: $orange-light;
@@ -29,9 +31,9 @@
             
             }
             .logo-div-footer{
-                margin-bottom: 40px;
+                margin-bottom: 20px;
                 .logo-footer{
-                    width: 50px;
+                    width: 250px;
                     object-fit: cover;
                 }
             } 

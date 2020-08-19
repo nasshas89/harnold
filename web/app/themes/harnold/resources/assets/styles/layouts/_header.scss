@@ -6,17 +6,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     
   }
 }
 .menu{
-  width: 55%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
   ul{
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    
+    margin-bottom: 0;
     li{
       list-style: none;
+      margin-left: 40px;
       a{
         color: $orange;
         font-weight: bold;
@@ -26,3 +33,24 @@
   }
 }
 
+.logo_header{
+  width: 200px;
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.bag-picto{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 40px;
+  
+  img{
+    width: 45px;
+  }
+  p{
+    color: white;
+  }
+}
