@@ -3,7 +3,7 @@
 @section('content')
 
   @include('home.hero')
-  @include('home.menu-picto')
+  {{-- @include('home.menu-picto') --}}
 
   <section class="wrapper">test
 
