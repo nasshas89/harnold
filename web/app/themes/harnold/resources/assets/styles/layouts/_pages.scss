@@ -1,0 +1,17 @@
+.cart-modal{
+    background-color: black;
+    opacity: 0.7;
+    width: 0;
+    height: 100vh;
+    z-index: 800;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // display: none;
+    transition: 0.3s;
+}
+.full-modal{
+    width: 100%;
+    transition: 0.3s;
+    
+}

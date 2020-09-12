@@ -8,6 +8,7 @@
   <section class="wrapper">test
 
 @dump('archive')
+
 </section>
 @endsection
 

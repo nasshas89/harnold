@@ -2,21 +2,19 @@
     <div class="header-harnold__main wrapper">
         <div class="logo_header">
             <img class="" src="@asset('images/logo2.svg')" alt="Logo-Harnold" >
+            <a class ="link-logo-header" href=""></a>
         </div>
             <nav class="menu">
-                <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Concept</a></li>
-                    <li><a href="">Livraison</a></li>
-                </ul>
+                <a href="">Accueil</a>
+                <a href="">Concept</a>
+                <a href="">Livraison</a>
+                <a href="">Zone de livraison</a>
                 <div class="bag-picto">
-                    <p>Commander</p>
+                    <p>Mon Panier</p>
                     <img class="" src="@asset('images/bag.svg')" alt="">
+                    <a href="#" class="link-bag js-cart-click" href=""></a>
                 </div>
-                <div class="bag-picto">
-                    <p>Mon compte</p>
-                    <img class="" src="@asset('images/user.svg')" alt="">
-                </div>
+               
             </nav>
             
 
@@ -32,6 +30,7 @@
        @endif             
     </div>    
 </section> 
+@include('home.modal-cart')
 
 
 

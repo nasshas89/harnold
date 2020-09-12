@@ -1,56 +1,96 @@
-.header-harnold{
+.header-harnold {
   background-color: $bg-blue;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.08);
   padding: 0px 0;
-  &__main{
+
+  &__main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
-  }
-}
-.menu{
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  align-items: center;
-  ul{
-    width: 80%;
-    display: flex;
-    
-    margin-bottom: 0;
-    li{
-      list-style: none;
-      margin-left: 40px;
-      a{
-        color: $orange;
-        font-weight: bold;
-        cursor: pointer;
-      }
-    }
+
   }
 }
 
-.logo_header{
-  width: 200px;
-  img{
+.menu {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+
+  list-style: none;
+
+  a {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    // margin-left: 40px;
+    font-size: 1.6rem;
+    font-family: $f-primary;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: $orange-light;
+    }
+  }
+
+
+}
+
+.logo_header {
+  width: 250px;
+  cursor: pointer;
+  position: relative;
+
+  .link-logo-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  img {
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
 }
-.bag-picto{
+
+.bag-picto {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 40px;
-  
-  img{
-    width: 45px;
+  position: relative;
+
+  .link-bag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
   }
-  p{
+
+  img {
+    width: 45px;
+    margin-left: 15px;
+  }
+
+  p {
     color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: $f-primary;
+    cursor: pointer;
+
+    &:hover {
+      color: $orange-light;
+
+    }
   }
 }
