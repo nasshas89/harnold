@@ -1,32 +1,52 @@
-.hero-motivation{
-    padding: 80px 0;
+.hero-motivation {
+  padding: 80px 0;
+  @media screen and (max-width: 1300px) {
+    padding: 60px 5px;
+  }
 }
-.cards-motivation{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    &__item{
-        box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.2);
-        width: 30%;
-        height: 300px;
-        padding: 15px 30px;
-        border-radius: 2px;
-        position: relative;
-        overflow:hidden;
-        
+
+.cards-motivation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  @media screen and (max-width: 1300px) {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+    width: 22%;
+    min-height: 300px;
+    padding: 15px 30px;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: 1300px) {
+        width: 49%;
+        margin-bottom: 20px;
+        min-height: 250px;
+      }
+
+     @media screen and (max-width: 900px) {
+        width:100%;
+        margin:auto;
+        margin-bottom: 20px;
+      }  
+  }
+
+  .image-motivation {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+    bottom: -13px;
+    right: -68px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      // object-fit: cover;
     }
-    .image-motivation{
-        width: 200px;
-        height: 150px;
-        position: absolute;
-        z-index: -1;
-        bottom: -16px;
-        right: -62px;
-        
-        img{
-            height: 100%;
-            width: 100%;
-            // object-fit: cover;
-        }
-    }
+  }
 }

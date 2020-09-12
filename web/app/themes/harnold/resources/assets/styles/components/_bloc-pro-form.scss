@@ -1,12 +1,17 @@
 .form-pro{
     padding: 70px 0;
     
-    // background-image: url("../../images/imagetop4.png");
+    @media screen and (max-width: 900px) {
+        padding: 0px;
+      }
     
 }
 
 .short-code-form{
     padding: 70px 90px 55px;
+    @media screen and (max-width: 900px) {
+        padding: 20px 20px 40px;
+      }
 }
 
 .bloc-form{
@@ -17,18 +22,29 @@
     width: 40%;
     margin: auto;
     box-shadow: 0 21px 155px rgba(16,82,133,.1);
-    
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
 
 
     &__head{
         background-color: $orange-light;
         padding: 60px 90px 40px;
         border-radius: 10px 10px 0 0;
+        @media screen and (max-width: 900px) {
+            padding: 50px 10px;
+            border-radius: 0px;
+            width: 100%;
+          }
         h2{
             color: $bg-blue;
             letter-spacing: 0.5px;
             line-height: 1.4;
             font-weight: 700;
+            @media screen and (max-width: 900px) {
+                text-align: center;
+                font-size: 2.5rem;
+              }
 
         }
         p{
@@ -36,19 +52,31 @@
             line-height: 1.4;
             font-weight: 700;
             letter-spacing: 0.5px;
+            @media screen and (max-width: 900px) {
+                text-align: center;
+                font-size: 1.4rem;
+                padding: 0 15px;
+              }
         }
     }
 }
  .div-name{
      display: flex;
      flex-direction: row;
-     justify-content: space-around;
+     justify-content: space-between;
      width: 100%;
      margin-bottom: 15px;
+     @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
      input{
         color: $bg-blue;
         font-size: 1.3rem;
+        @media screen and (max-width: 900px) {
+            margin-bottom: 15px;
+          }
      }
+     
  }
 
 .name-delivery{
@@ -58,6 +86,9 @@
     background-color: #f5fbfe;
     height: 70px;
     width: 100%;
+    @media screen and (max-width: 900px) {
+        border-radius:50px !important;
+      }
 }
 
 .username-delivery{
@@ -67,6 +98,9 @@
     background-color: #f5fbfe;
     height: 70px;
     width: 100%;
+    @media screen and (max-width: 900px) {
+        border-radius:50px;
+      }
 }
 
 .email-delivery{

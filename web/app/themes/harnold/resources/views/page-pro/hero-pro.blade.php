@@ -11,5 +11,9 @@
     <div class="hero-pro__right">
         <img class="" src="@asset('images/livreur.PNG')" alt="Livreur à vélo Harnold">
         <div class="image-slant"></div>
-    </div>       
+    </div>  
+           
 </div>    
+<div class="title-hero-mobil-pro">
+    <h3>Tu sohaites travailler avec nous ?</h3>
+</div>  

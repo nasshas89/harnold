@@ -13,7 +13,12 @@
         <div class="cards-motivation__item">
             <h3>Livraison</h3>
             <p>Gagnez jusqu'à 15€ de l’heure en travaillant selon vos envies</p>
-            <div class="image-motivation"> <img class="" src="@asset('images/cauliflower.svg')" alt="carotte" ></div>
+            <div class="image-motivation"> <img class="" src="@asset('images/cauliflower.svg')" alt="choux" ></div>
+        </div>
+        <div class="cards-motivation__item">
+            <h3>Carrière</h3>
+            <p>Gagnez jusqu'à 15€ de l’heure en travaillant selon vos envies</p>
+            <div class="image-motivation"> <img class="" src="@asset('images/carotte.svg')" alt="" ></div>
         </div>
         
     </div>    
