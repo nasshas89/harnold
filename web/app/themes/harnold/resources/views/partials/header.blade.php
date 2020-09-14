@@ -12,7 +12,7 @@
                 <div class="bag-picto">
                     <p>Mon Panier</p>
                     <img class="" src="@asset('images/bag.svg')" alt="">
-                    <a href="#" class="link-bag js-cart-click" href=""></a>
+                    <a href="#" class="link-bag js-cart-click" id="mySidenav" href=""></a>
                 </div>
                
             </nav>

@@ -9,7 +9,6 @@
 
 @dump('archive')
 
-</section>
 @endsection
 
 {{-- @dump($wc->cart) --}}

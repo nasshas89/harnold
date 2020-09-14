@@ -15,7 +15,9 @@
 
 html {   font-size: 62.5%; }
 
-
+.hidden-scroll{
+  overflow-y: hidden;
+}
 
 .triangle {
     &::after {

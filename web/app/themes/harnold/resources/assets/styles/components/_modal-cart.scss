@@ -1,0 +1,87 @@
+ .sidenav {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   right: 0;
+   background-color: $bg-blue;
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 0px;
+   
+   
+ }
+
+ .sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: $orange-light;
+   display: block;
+   transition: 0.5s;
+ }
+
+ .sidenav a:hover {
+   color: #f1f1f1;
+ }
+
+
+ .div-opening {
+   width: 25%;
+ }
+
+ .body-right {
+   margin-right: 25%;
+   transition: margin-right .5s;
+ }
+
+ .div-opening-close {
+   width: 0%;
+ }
+
+ .body-right-close {
+   margin-right: 0px;
+   transition: margin-right .5s;
+ }
+
+
+.cart-modal-up{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 0px 0px 10px;
+  
+  p{
+    
+    margin-right: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-family: $f-primary;
+    cursor: pointer;
+  }
+}
+
+ .picto-cart-up {
+   width: 40px;
+   cursor: pointer;
+    margin-right: 25px;
+   img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+   }
+ }
+
+ .cross-cart-up{
+  width: 15px;
+  cursor: pointer;
+  margin-left: 135px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+ }
