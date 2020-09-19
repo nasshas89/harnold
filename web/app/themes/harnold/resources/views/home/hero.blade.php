@@ -1,10 +1,7 @@
-<section class="hero-home">
-    <div class="embed-home">  
-        <video width="100%"  autoplay>
-                <source src="@asset('images/video.mp4')" type="video/mp4">
-                <source src="video.ogg" type="video/ogg">
-                    <source src="video.webm" type="video/webm">
-        </video> 
-    </div>
-    @include('home.menu-picto')   
-</section>    
+<div class="hero-home" >
+    <img class="hero-image-home" src="@asset('images/livreur.PNG')" alt="picto menu">
+    <div class="hero-homecontent">
+        <h1>fruits et légumes bio, locaux, livré à vélo </h1>
+        <img class="arrow-hero-home" src="@asset('images/right-arrow.svg')" alt="picto menu">
+    </div>    
+</div>    

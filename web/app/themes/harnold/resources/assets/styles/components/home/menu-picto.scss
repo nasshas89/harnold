@@ -1,0 +1,115 @@
+.hero-bg {
+  width: 45px;
+  margin-right: 10px;
+}
+.picto-title{
+  width: 50px;
+  margin-left:15px;
+}
+
+// breadcrumb
+
+#crumbs {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    padding: 0 0 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .01rem;
+    color: $text-blue;
+    font-family: $f-secondary;
+    margin: 50px 0 50px;
+    padding: 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: inline-table;
+
+    li {
+      display: inline;
+
+
+      a {
+        display: block;
+        float: left;
+        height: 80px;
+        background: $orange;
+
+        text-align: center;
+        padding: 16px 30px 0 60px;
+        position: relative;
+        margin: 0 10px 0 0;
+
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+
+        &:after {
+          content: "";
+          border-top: 40px solid transparent;
+          border-bottom: 40px solid transparent;
+          border-left: 40px solid $orange;
+          position: absolute;
+          right: -40px;
+          top: 0;
+          z-index: 1;
+        }
+
+        &:before {
+          content: "";
+          border-top: 40px solid transparent;
+          border-bottom: 40px solid transparent;
+          border-left: 40px solid #fff;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+#crumbs ul li:first-child a {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#crumbs ul li:first-child a:before {
+  display: none;
+}
+
+#crumbs ul li:last-child a {
+  padding-right: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#crumbs ul li:last-child a:after {
+  display: none;
+}
+
+#crumbs ul li a:hover {
+  background: $bg-blue;
+  color: #fff;
+}
+
+#crumbs ul li a:hover:after {
+  border-left-color: $bg-blue;
+  color: #fff;
+}

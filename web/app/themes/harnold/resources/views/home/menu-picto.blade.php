@@ -1,30 +1,31 @@
-<div class="menu-picto">
-    
-    <div class="wrapper menu-picto__items">
-        <div class="bloc-picto">
-            <div class="picto-item">
+
+<div id="crumbs" class="wrapper">
+    <h2>Composer votre panier<img class="picto-title" src="@asset('images/picto-crew-tomat.svg')" alt="picto menu"></h2>
+      <ul>
+          <li>
+            <a href="#1">
                 <img class="hero-bg" src="@asset('images/legumes.svg')" alt="picto menu">
-            </div>
-            <p>Légumes</p>
-        </div> 
-        <div class="bloc-picto">        
-            <div class="picto-item">
+                Légumes
+            </a>
+           </li>
+           <li>
+            <a href="#1">
                 <img class="hero-bg" src="@asset('images/fruits.svg')" alt="picto menu">
-            </div>
-            <p>Fruits</p> 
-        </div>
-        <div class="bloc-picto">  
-            <div class="picto-item">
+                Fruits
+            </a>
+           </li>
+           <li>
+            <a href="#1">
                 <img class="hero-bg" src="@asset('images/cagette.svg')" alt="picto menu">
-            </div> 
-            <p>Cagette</p>
-        </div>
-        <div class="bloc-picto">
-            <div class="picto-item">
+                cagettes
+            </a>
+           </li>
+           <li>
+            <a href="#1">
                 <img class="hero-bg" src="@asset('images/promotion.svg')" alt="picto menu">
-            </div> 
-            <p>Promotion</p>
-        </div>      
-    </div> 
- 
-</div>    
+                promotions
+            </a>
+           </li>
+      </ul>
+  </div>
+  @include('home.product.card-product')

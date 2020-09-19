@@ -3,11 +3,10 @@
 @section('content')
 
   @include('home.hero')
-  {{-- @include('home.menu-picto') --}}
-
-  <section class="wrapper">test
-
-@dump('archive')
+  <section class="wrapper">
+  @include('home.menu-picto')
+  </section>
+  @dump('archive')
 
 @endsection
 
