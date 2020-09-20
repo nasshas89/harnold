@@ -7,13 +7,33 @@
   margin-left:15px;
 }
 
-// breadcrumb
+
+
+#London{
+  background-color: violet;
+}
+#Paris{
+  background-color: blue;
+}
+#Dubai{
+  background-color: green;
+}
+#Tokyo{
+  background-color: red;
+}
+
+.sub-menu-picto{
+  display: none;
+}
 
 #crumbs {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  
 
   h2 {
     padding: 0 0 30px;

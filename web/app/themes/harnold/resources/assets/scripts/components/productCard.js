@@ -30,11 +30,24 @@ export default {
     });
     // product +/-
 
+
+
+
     //   Function know more sur les carte product
     let showMoreButton = $('.texte-more');
     showMoreButton.on('click', this.showMore);
 
+    let clikos = $('.tablinks');
+    clikos.on('click', this.clickosFunction);
+
   },
+
+  clickosFunction: function () {
+   
+    
+    
+  },
+
   showMore: function () {
     if ($(this).parent().parent().find('.content-product-car__info').hasClass('js-show-more')) {
 
@@ -53,6 +66,8 @@ export default {
     }
 
   },
+
+
 
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
