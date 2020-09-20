@@ -1,206 +1,212 @@
-@import url(https://fonts.googleapis.com/css?family=Satisfy);
-@import url(https://fonts.googleapis.com/css?family=Acme);
-
-
-
-.box-wrapper {
-  background-color:
-    #FFF;
-  overflow: hidden;
-  width: 20%;
-  box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.48);
-  padding: 0;
-  text-align: left;
-  border-radius: 10px;
-
-  img {
-    max-width: 100%;
-  }
-
-  .success {
-    position: absolute;
-    top: 50%;
-    left: 37%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    z-index: 999;
-
-    .expanded & {
-      opacity: 1;
-      transition: opacity 0.3s 0.6s;
-    }
-
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color:
-        #FFF;
-    }
-
-    &:before {
-      width: 40px;
-      height: 20px;
-      transform: rotate(45deg);
-    }
-
-    &:after {
-      width: 88px;
-      height: 20px;
-      transform: rotate(-45deg);
-      top: -16px;
-      left: 8px;
-    }
-  }
-}
-
-.title {
-  font-size: 2em;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 0;
-  font-family: 'Acme', sans-serif;
-  text-align: left;
-}
-
-.desc {
-  font-family: 'Satisfy', cursive;
-  font-size: 1.2em;
-  text-align: left;
+.tiesto {
+  padding: 40px 30px 60px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  &__details{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      padding: 15px 0;
-      &:after{
-          content:"";
-          position: absolute;
-          width: 30%;
-          border: 1px solid $orange;
-          margin: auto;
-          bottom: 0;
-      }
-  }
-
-}
-
-.box-content {
-  position: relative;
-  z-index: 1;
-
-  &:before {
-    content: '';
-    width: 200%;
-    height: 100px;
-    position: absolute;
-    display: block;
-    background-color:
-      #FFF;
-    transform: rotate(-8deg);
-    top: -50px;
-    left: -10%;
-    z-index: -1;
-  }
-
-  .buy {
-    display: block;
-    top: -80px;
-    right: 30px;
-    z-index: 2;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-
-    span {
-      width: 70px;
-      height: 70px;
-      background-color:
-        $orange;
-      display: block;
-      border-radius: 50%;
-      position: absolute;
-      font-size: 36px;
-      color:
-        #FFF;
-      transition: all 0.3s ease;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-
-      i {
-        padding: 15px;
-      }
-
-      .expanded & {
-        width: 750px;
-        height: 750px;
-
-        i {
-          display: none;
-        }
-      }
-    }
-  }
-
-  .price {
-    font-size: 16px;
-    font-weight: 900;
-    display: block;
-    width: 100px;
-    margin: 10px 0;
-    position: relative;
-    font-family: 'Satisfy', cursive;
-  }
-
-
-  .footer {
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 1em 0;
-
-      li {
-        color:
-          #EFD829;
-      }
-    }
-  }
-}
-
-.content-produit {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 80%;
-  margin: auto;
-
-  .origine-product {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-
-.product-card-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
-.plus-card-product{
-    width:100%;
+
+// /@at-root
+.product-card {
+  width: 22.5%;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.48);
+  
+  &__image {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
     cursor: pointer;
+    
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .rond-cart {
+    position: absolute;
+    cursor: pointer;
+    background-color: orange;
+    top: 114px;
+    right: 22px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+      background-color: #105285;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      position: absolute;
+      top: 20%;
+      left: 18%;
+    }
+  }
+}
+
+.content-product-car {
+  padding: 30px 20px 10px;
+  background-color: white;
+  border-radius: 10px;
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: $orange;
+    text-transform: uppercase;
+  }
+
+  &__origine {
+    margin: 10px 0 0;
+
+    p {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+
+      span {
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+      .texte-more {
+        font-size: 12px;
+        margin-left: 10px;
+        border-bottom: 2px solid orange;
+        cursor: pointer;
+
+        .know-more {
+          width: 9px;
+          margin-left: 4px;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-weight: bold;
+      font-size: 12.5px;
+      margin: 0.5em 0 0;
+      font-style: italic;
+
+      &::before {
+        content: "";
+        width: 50px;
+        top: 0;
+      }
+
+      span {
+        font-weight: normal;
+        font-size: 16px;
+      }
+
+    }
+
+  }
+
+  &__price {
     display: flex;
     justify-content: center;
-    img{
-        object-fit: cover;
-        width: 20px;
+    align-items: center;
+
+    .prix {
+      text-align: center;
+      line-height: 1.20;
+
+      span {
+        color: orange;
+        font-weight: bold;
+        font-size: 22.5px;
+      }
     }
+  }
+}
+
+
+
+.js-hidden-more {
+  display: none;
 
 }
 
+.js-show-more {
+  display: flex !important;
+  transition: all 0.3s;
+}
+
+.input-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+
+}
+
+// input  quantity
+
+.num-block {
+  float: left;
+  cursor: pointer;
+}
+
+.skin-2 .num-in {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  height: 30px;
+  width: 110px;
+  float: left;
+}
+
+.skin-2 .num-in span {
+  width: 40%;
+  display: block;
+  height: 30px;
+  float: left;
+  position: relative;
+}
+
+.skin-2 .num-in span:before,
+.skin-2 .num-in span:after {
+  content: '';
+  position: absolute;
+  background-color: #667780;
+  height: 2px;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -5px;
+}
+
+.skin-2 .num-in span.plus:after {
+  transform: rotate(90deg);
+}
+
+.skin-2 .num-in input {
+  float: left;
+  width: 20%;
+  height: 30px;
+  border: none;
+  text-align: center;
+}
+
+/* / skin 2 */
