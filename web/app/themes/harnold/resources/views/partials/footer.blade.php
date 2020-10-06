@@ -1,28 +1,69 @@
 <footer class="footer">
-  <div class="footer__up wrapper-footer">
-    <div class="footer__up__button">
-      {{-- logo+button commander --}}
-      <div class="logo-div-footer">
-        <img class="logo-footer" src="@asset('images/logo2.svg')" alt="Logo-Harnold" >     
+    <div class="container footer__up">
+      <div class="footer__up__item">
+          <div class="footer__up__item__image">
+            <img src="@asset('images/cart-white.svg')" alt="">
+          </div>
+          <p class="footer__up__item__title">Issus des saisons</p>
+      
       </div>
-      <a href="" class="cta-buy">Commander</a>
+      <div class="footer__up__item">
+          <div class="footer__up__item__image">
+            <img src="@asset('images/cagette.svg')" alt="">
+          </div>
+          <p class="footer__up__item__title">Issus de l’agriculture locale</p>
+      
+      </div>
+      <div class="footer__up__item">
+          <div class="footer__up__item__image">
+            <img src="@asset('images/legumes.svg')" alt="">
+          </div>
+          <p class="footer__up__item__title">Issue d'une agriculture biologiques</p>
+      
+      </div>
+      <div class="footer__up__item">
+          <div class="footer__up__item__image">
+            <img src="@asset('images/fruits.svg')" alt="">
+          </div>
+          <p class="footer__up__item__title">Issus de circuit cour donc frais</p>
+      
+      </div>
     </div>
-    <div class="footer__up__us">
-      <span>A propos :</span>
-      <p>dfghj</p>
+    <div class="footer__down">
+      <div class="container footer__down__content">
+        <div class="content__logo">
+          <img src="@asset('images/logo2.svg')" alt="">
+        </div>
+        <nav class="content__menu">
+          <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Concept</a></li>
+            <li><a href="">Commander</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="content__citation">
+            <h2>" Rendre le bio abordable pour tous "</h2>
+        </div>
+        <div class="content__social">
+          <div class="content__social__item">
+            <img src="@asset('images/linkedin.svg')" alt="">
+          </div>
+          <div class="content__social__item">
+            <img src="@asset('images/fb.svg')" alt="">
+          </div>
+          <div class="content__social__item">
+            <img src="@asset('images/youtube.svg')" alt="">
+          </div>
+        </div>
+        <div class="content__cgu">
+          <ul>
+            <li>&#169;2020 Tous droit réservé. Copyright Harnold</li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+        
+      </div>
     </div>
-    <div class="footer__up__link">
-      <span>Rester connecter :</span>
-{{-- Rester connecter (reseaux sociaux + newsletter) --}}
-      <p>dfghj</p>
-    </div>    
-  </div>
-  
-  <div class="footer__down wrapper-footer">
-    <div class="footer__down__content">
-      <div><a href=""> Mention légale</a></div>
-      <div><a href=""> © 2020 Harnold</a></div>
-      <div><a href=""> CGV</a></div>
-   </div>
-  </div> 
-</footer>
+  </footer> 
