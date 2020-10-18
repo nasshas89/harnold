@@ -32,10 +32,12 @@
  
   <div class="sub-menu-picto wrapper " id="Legumes">
         @include('home.product.card-product')
+       
   </div>
   <div class="sub-menu-picto wrapper" id="Fruits">
     
     @include('home.product.card-product')
+   
 </div>  
 <div class="sub-menu-picto wrapper" id="Cagette">
     

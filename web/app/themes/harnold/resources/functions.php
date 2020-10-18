@@ -91,3 +91,31 @@ Container::getInstance()
         ]);
     }, true);
  
+    add_action('init', function () {
+        if (!function_exists('acf_add_options_page')) {
+            return;
+        }
+        acf_add_options_page([
+            'page_title'    => 'Options',
+            'menu_title'    => 'Options',
+            'menu_slug'     => 'Options',
+            'capability'    => 'edit_posts',
+            'parent_slug'   => '',
+            'position'      => 80, // Below 'Custom Fields' menu item
+            'icon_url'      => 'dashicons-admin-generic'
+        ]);
+        acf_add_options_sub_page([
+            'page_title'    => 'Général',
+            'menu_title'    => 'Général',
+            'menu_slug'     => 'general',
+            'capability'    => 'manage_options',
+            'parent_slug'   => 'Options'
+        ]);
+        acf_add_options_sub_page([
+            'page_title'    => 'Footer',
+            'menu_title'    => 'Footer',
+            'menu_slug'     => 'footer',
+            'capability'    => 'manage_options',
+            'parent_slug'   => 'Options'
+        ]);
+    });

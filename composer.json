@@ -25,6 +25,28 @@
   },
   "repositories": [
     {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.9.1",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t={%VERSION}"
+        },
+        "require": {
+          "composer/installers": "^1.4",
+          "ffraenz/private-composer-installer": "^4.0"
+        }
+      }
+    },
+
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    },
+
+    {
       "type": "composer",
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
@@ -50,11 +72,20 @@
     "wpackagist-plugin/wp-mail-smtp": "^1.4",
     "symfony/var-dumper": "^5.1",
     "wpackagist-plugin/query-monitor":"3.6.1",
-    "wpackagist-plugin/flamingo":"dev-trunk"
+    "wpackagist-plugin/flamingo":"dev-trunk",
+    "koodimonni-language/core-fr_fr": "^5.5",
+    "koodimonni-plugin-language/woocommerce-fr_fr": "^4.4",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.9",
+    "wpackagist-plugin/woocommerce-gateway-stripe": "^4.5",
+    "wordplate/acf": "^8.5",
+    "wpackagist-plugin/woocommerce-ajax-cart":"dev-trunk"
+
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.5.4",
-    "roave/security-advisories": "dev-master"
+    "roave/security-advisories": "dev-master",
+    "wpackagist-plugin/duplicate-post": "^3.2",
+    "wpackagist-plugin/acf-extended": "^0.8.7.2"
   },
   "config": {
     "optimize-autoloader": true,
@@ -63,6 +94,12 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "extra": {
+    "dropin-paths": {
+      "web/app/languages/": ["vendor:koodimonni-language"],
+      "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+      "web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
+    }, 
+
     "installer-paths": {
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],

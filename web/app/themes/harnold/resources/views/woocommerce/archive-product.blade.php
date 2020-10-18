@@ -7,8 +7,8 @@
   @include('home.menu-picto')
   </section>
   @dump('archive')
+ 
+  @dump($product)
 
 @endsection
-
-{{-- @dump($wc->cart) --}}
 

@@ -6,10 +6,16 @@ use Sober\Controller\Controller;
 
 class App extends Controller
 {
+
+    use ArchiveProduct;
+    use others\General;
+    
     public function siteName()
     {
         return get_bloginfo('name');
     }
+
+
 
     public static function title()
     {
