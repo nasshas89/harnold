@@ -2,26 +2,26 @@
 <div id="crumbs" class="wrapper">
     <h2>Composer votre panier<img class="picto-title" src="@asset('images/picto-crew-tomat.svg')" alt="picto menu"></h2>
     <ul>
-        <li class="tablinks" onclick="openCity(event, 'London')">
-        <a href="#1">
-            <img class="hero-bg" src="@asset('images/legumes.svg')" alt="picto menu">
-            Légumes
-        </a>   
+        <li class="tablinks" data-cityname="Legumes">
+            <a href="#1">
+                <img class="hero-bg" src="@asset('images/legumes.svg')" alt="picto menu">
+                Légumes
+            </a>   
         </li>
 
-        <li class="tablinks" onclick="openCity(event, 'Paris')">
+        <li class="tablinks" data-cityname="Fruits">
         <a href="#1">
             <img class="hero-bg" src="@asset('images/fruits.svg')" alt="picto menu">
             Fruits
         </a>
         </li>
-        <li class="tablinks" onclick="openCity(event, 'Tokyo')">
+        <li class="tablinks" data-cityname="Cagette">
         <a href="#1">
             <img class="hero-bg" src="@asset('images/cagette.svg')" alt="picto menu">
             cagettes
         </a>
         </li>
-        <li class="tablinks" onclick="openCity(event, 'Dubai')">
+        <li class="tablinks" data-cityname="Promotions">
         <a href="#1">
             <img class="hero-bg" src="@asset('images/promotion.svg')" alt="picto menu">
             promotions
@@ -30,31 +30,18 @@
     </ul>
 </div>
  
-  <div class="sub-menu-picto wrapper " id="London">
+  <div class="sub-menu-picto wrapper " id="Legumes">
         @include('home.product.card-product')
   </div>
-  <div class="sub-menu-picto wrapper" id="Paris">
+  <div class="sub-menu-picto wrapper" id="Fruits">
+    
     @include('home.product.card-product')
 </div>  
-<div class="sub-menu-picto wrapper" id="Tokyo">
+<div class="sub-menu-picto wrapper" id="Cagette">
+    
     @include('home.product.card-product')
 </div>
-<div class="sub-menu-picto wrapper" id="Dubai">
+<div class="sub-menu-picto wrapper" id="Promotions">
+    
     @include('home.product.card-product')
 </div>
-
-<script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("sub-menu-picto");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-    </script>

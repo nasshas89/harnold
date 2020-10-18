@@ -2,6 +2,26 @@ export default {
   init() {
     // JavaScript to be fired on the home page
 
+    $(document).ready(function () {
+      $('.tablinks').click(function () {
+       let cityName = $(this).data('cityname');
+       
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName('sub-menu-picto');
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tablinks');
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' active', '');
+        }
+        document.getElementById(cityName).style.display = 'block';
+        $(this).addClass('active');
+      
+      });
+    });
+
+
     /////////////////// product +/-
     $(document).ready(function () {
       $('.num-in span').click(function () {
