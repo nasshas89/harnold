@@ -2,7 +2,5 @@
 
 @section('content')
 @dump('checkout')
-@while(have_posts()) @php the_post() @endphp
- 
-@endwhile
+@php the_content() @endphp
 @endsection

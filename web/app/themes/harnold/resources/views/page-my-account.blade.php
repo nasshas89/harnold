@@ -5,7 +5,7 @@
 
 <div class="woocommerce-MyAccount-content">
 	@dump('my-account')
-	
+	@php the_content() @endphp
 </div>
  
  
