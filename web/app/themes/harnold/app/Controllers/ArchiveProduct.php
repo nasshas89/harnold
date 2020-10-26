@@ -34,6 +34,7 @@ trait ArchiveProduct
                         $taxs[] = (object)$tax_tab;
                     }
                 }
+                $product = wc_get_product(get_the_ID());
 
                 $post = [
                     'ID'            => get_the_ID(),
@@ -44,6 +45,9 @@ trait ArchiveProduct
                     'content'       => get_the_content(),
                     'date' => get_the_date('j F Y'),
                     'thubnail'      => get_the_post_thumbnail_url(),
+                    'price' => $product->get_price(),
+                    'sku' => $product->get_regular_price(),
+
 
                 ];
 
