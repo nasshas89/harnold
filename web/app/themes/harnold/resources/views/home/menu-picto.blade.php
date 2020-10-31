@@ -15,16 +15,16 @@
             Fruits
         </a>
         </li>
-        <li class="tablinks" data-cityname="Cagette">
+        <li class="tablinks" data-cityname="Paniers">
         <a href="#1">
             <img class="hero-bg" src="@asset('images/cagette.svg')" alt="picto menu">
-            cagettes
+            Paniers
         </a>
         </li>
-        <li class="tablinks" data-cityname="Promotions">
+        <li class="tablinks" data-cityname="Cagettes">
         <a href="#1">
             <img class="hero-bg" src="@asset('images/promotion.svg')" alt="picto menu">
-            promotions
+            Cagettes
         </a>
         </li>
     </ul>
@@ -39,11 +39,11 @@
     @include('home.product.card-product')
    
 </div>  
-<div class="sub-menu-picto wrapper" id="Cagette">
+<div class="sub-menu-picto wrapper" id="Paniers">
     
     @include('home.product.card-product')
 </div>
-<div class="sub-menu-picto wrapper" id="Promotions">
+<div class="sub-menu-picto wrapper" id="Cagettes">
     
     @include('home.product.card-product')
 </div>

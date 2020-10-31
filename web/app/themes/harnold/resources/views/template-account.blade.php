@@ -1,11 +1,16 @@
+{{--
+  Template Name: Compte
+--}}
+
+
 @extends('layouts.app')
 
 @section('content')
-@php do_action( 'woocommerce_account_navigation' ); @endphp
+
 
 <div class="woocommerce-MyAccount-content">
 	@dump('my-account')
-	
+	{!! do_shortcode('[woocommerce_my_account]') !!}
 	 
 {{-- 
 	@dump($cat_product) 

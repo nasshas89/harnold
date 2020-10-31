@@ -121,3 +121,8 @@ Container::getInstance()
     });
 
    
+// /**
+//  * Change location of checkout payment on checkout page
+//  */
+// remove_action('woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20);
+// add_action('woocommerce_checkout_payment_view', 'woocommerce_checkout_payment', 10);
