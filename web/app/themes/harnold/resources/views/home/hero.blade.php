@@ -12,12 +12,13 @@
             <div class="hero-home__right__card__title">
                 <p>Notre mission</p>
             </div>
+            <div class="hero-home__right__card__content">
+                <p >" Nous plantons un arbres en zone urbaine " </p>
+            </div> 
             <div class="hero-home__right__card__circular">
                 <p class="count" data-counter="300">0 <sup>km</sup></p>
             </div>
-            <div class="hero-home__right__card__content">
-                <p >" Nous plantons un arbres en zone urbaine " </p>
-            </div>      
+                 
         </div>    
     </div>        
 </div>    
