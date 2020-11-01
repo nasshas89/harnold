@@ -12,7 +12,7 @@
                     <li><a href="">Recette/témoignage</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href=""><img  src="@asset('images/user.svg')" alt="Logo-Harnold" >Mon Compte</a></li>
-                    <li><a href=""><img  src="@asset('images/shopping-cart.svg')" alt="Logo-Harnold" >Panier</a></li>
+                    <li><a href="#" class="js-cart-click" href=""><img  src="@asset('images/shopping-cart.svg')" alt="Logo-Harnold" >Panier</a></li>
                 </ul>
             </nav>
             
