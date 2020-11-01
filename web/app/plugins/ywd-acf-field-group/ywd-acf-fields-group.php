@@ -5,7 +5,7 @@
  */
 
 use App\Controllers\ArchiveBlog;
-use YwdAcfFieldsGroup\FieldsGroup\{ARCHIVE_blog,CPT_blog,PAGE_sample, OPTION_footer, OPTION_general,};
+use YwdAcfFieldsGroup\FieldsGroup\{ARCHIVE_blog, ARCHIVE_recette, CPT_blog, CPT_recette, PAGE_sample, OPTION_footer, OPTION_general,};
 
 if (!function_exists('register_extended_field_group')) {
 	return;
@@ -18,4 +18,6 @@ PAGE_sample::init();
 OPTION_general::init();
 OPTION_footer::init();
 CPT_blog::init();
+CPT_recette::init();
 ARCHIVE_blog::init();
+ARCHIVE_recette::init();
