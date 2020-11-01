@@ -1,12 +1,12 @@
 
 .cta__concept{
         background-color: white;
-        border: 1px solid $orange-light;
-        color: $orange;
+        border: 1px solid $primary-light;
+        color: $primary;
         padding: 15px 25px;
         border-radius: 50%;
         &:hover{
-            background-color: $orange;
+            background-color: $primary;
             color: white;
         }
     }

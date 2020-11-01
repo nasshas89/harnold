@@ -48,7 +48,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $orange;
+      color: $primary;
     }
   }
 
@@ -64,7 +64,7 @@
         display: block;
         float: left;
         height: 80px;
-        background: $orange;
+        background: $primary;
 
         text-align: center;
         padding: 16px 30px 0 60px;
@@ -80,7 +80,7 @@
           content: "";
           border-top: 40px solid transparent;
           border-bottom: 40px solid transparent;
-          border-left: 40px solid $orange;
+          border-left: 40px solid $primary;
           position: absolute;
           right: -40px;
           top: 0;
@@ -126,11 +126,11 @@
 }
 
 #crumbs ul li a:hover {
-  background: $bg-blue;
+  background: $bg-pink;
   color: #fff;
 }
 
 #crumbs ul li a:hover:after {
-  border-left-color: $bg-blue;
+  border-left-color: $bg-pink;
   color: #fff;
 }

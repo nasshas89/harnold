@@ -1,6 +1,6 @@
 .become-delivery {
   padding: 60px 0;
-  background-color: $bg-blue;
+  background-color:$bg-pink;
   @media screen and (max-width: 1200px) {
     padding: 30px 0;
   }
@@ -9,7 +9,7 @@
 
     .title-condition-delivery {
       h2 {
-        color: $orange;
+        color: $primary;
         text-transform: initial;
 
         @media screen and (max-width: 1200px) {

@@ -1,3 +1,14 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {   font-size: 62.5%; }
+
+.hidden-scroll{
+  overflow-y: hidden;
+}
+
 .wrapper{
   width: 100%;
   max-width: 1250px;
@@ -13,21 +24,10 @@
   margin: auto;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-html {   font-size: 62.5%; }
-
-.hidden-scroll{
-  overflow-y: hidden;
-}
-
-
  
 h1,h2,h3{
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.5px;
   color:$text-blue;
   margin: 1em 0;
@@ -36,14 +36,17 @@ h1,h2,h3{
 
 h1{
   font-size: 4rem;
-  
+  font-family: $f-primary;
 }
 h2{
-  font-size: 3.5rem;
-  
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: $f-secondary;
 }
 h3{
-  font-size: 2.3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: $f-primary;
 }
 p{
 font-size: 1.6rem;
@@ -53,6 +56,7 @@ margin: 1em 0;
 }
 a{
   color:$text-blue;
+  font-size: 1.6rem;
 }
 
 ul{
@@ -62,7 +66,7 @@ ul{
       color:$text-blue;
       font-weight: 500;
       line-height: 1;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       cursor: pointer;
     }
   }

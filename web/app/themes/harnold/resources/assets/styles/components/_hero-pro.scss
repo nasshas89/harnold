@@ -12,7 +12,7 @@
   &__left {
     width: 50%;
     padding: 15px 0;
-    background-color: $orange;
+    background-color:$primary;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,7 +54,7 @@
       padding: 15px 30px;
 
       &:hover {
-        background-color: $bg-blue;
+        background-color: $bg-pink;
         color: white;
       }
     }
@@ -79,7 +79,7 @@
     }
 
     .image-slant {
-      background: linear-gradient(87deg, $orange 30px, transparent 31px);
+      background: linear-gradient(87deg, $primary 30px, transparent 31px);
       position: absolute;
       left: 0;
       bottom: 0;
@@ -100,7 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $orange-light;
+    background-color: $primary-light;
     h3{
         padding: 10px 5px;
         font-size: 16px;
