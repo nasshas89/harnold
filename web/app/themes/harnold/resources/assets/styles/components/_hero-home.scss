@@ -50,19 +50,24 @@
 
       &__title {
         text-align: center;
-        font-family: $f-primary;
-        
+        p{
+          font-family: $f-primary;
+        color: #F29489ED;
+        font-weight: 900;
+        }
       }
 
       &__circular {
         display: flex;
-        
+        width: 100%;
         .count{
          margin-top: 0;
          margin-bottom: 0;
          text-align: center;
          font-size: 60px;
-         width: 100%;
+         
+         color: #F29489ED;
+    font-weight: 900;
         }
       }
 
