@@ -1,0 +1,57 @@
+.header-up {
+  background-color: $bg-pink;
+  padding: 10px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__delivery {
+      p {
+        margin: 0;
+        font-weight: 500;
+        color: white;
+
+        span {
+          font-weight: 900;
+          text-transform: uppercase;
+          color: $text-blue;
+        }
+      }
+    }
+
+    &__social {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      &__picto {
+        width: 22px;
+        margin-left: 10px;
+        cursor: pointer;
+        position: relative;
+
+        &__link {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

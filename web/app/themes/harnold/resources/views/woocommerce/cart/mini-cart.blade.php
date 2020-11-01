@@ -12,3 +12,4 @@
 @php
 	do_action('woocommerce_after_mini_cart');
 @endphp
+

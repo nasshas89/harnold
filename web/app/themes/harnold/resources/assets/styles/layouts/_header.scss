@@ -1,45 +1,60 @@
 .header-harnold {
   background-color: white;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.08);
-  padding: 0px 0;
+
 
   &__main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    padding: 10px 0;
   }
 }
 
 .menu {
-  width: 70%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 
+  ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  list-style: none;
+    li {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #F29489ED;
+        font-weight: 900;
+        font-size: 1.6rem;
+        font-family: $f-primary;
+        cursor: pointer;
+        text-decoration: none;
 
-  a {
-    color: #F29489ED;
-    font-weight: 900;
-    font-size: 1.6rem;
-    font-family: $f-primary;
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: uppercase;
-    &:hover {
-      color: $primary-light;
+        img {
+          width: 35px;
+          margin-right: 5px;
+        }
+
+        &:hover {
+          color: $primary-light;
+        }
+      }
     }
   }
-
 
 }
 
 .logo_header {
-  width: 250px;
+  width: 200px;
   cursor: pointer;
   position: relative;
 
@@ -55,40 +70,5 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-  }
-}
-
-.bag-picto {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-
-  .link-bag {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-  }
-
-  img {
-    width: 45px;
-    margin-left: 15px;
-  }
-
-  p {
-    color: #F29489ED;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1.6rem;
-    font-family: $f-primary;
-    cursor: pointer;
-
-    &:hover {
-      color: $primary-light;
-
-    }
   }
 }

@@ -51,12 +51,13 @@ h3{
 p{
 font-size: 1.6rem;
 color:$text-blue;
+font-family: $f-primary;
 font-weight: 400;
-margin: 1em 0;
 }
 a{
   color:$text-blue;
   font-size: 1.6rem;
+  font-family: $f-primary;
 }
 
 ul{
@@ -67,6 +68,7 @@ ul{
       font-weight: 500;
       line-height: 1;
       font-size: 1.6rem;
+      font-family: $f-primary;
       cursor: pointer;
     }
   }
