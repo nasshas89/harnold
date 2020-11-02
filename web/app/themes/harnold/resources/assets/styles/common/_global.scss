@@ -73,3 +73,16 @@ ul{
     }
   }
 }
+
+.is-hidden{
+  display: none;
+  transition: all 2s;
+}
+.is-fixe{
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 999;
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
