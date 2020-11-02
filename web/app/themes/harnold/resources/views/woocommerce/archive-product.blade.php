@@ -2,10 +2,10 @@
 
 @section('content')
 
-  @include('home.hero')
-  <section class="wrapper">
-  @include('home.menu-picto')
-  </section>
+   @include('home.hero') 
+     <section class="wrapper"> 
+     @include('home.menu-picto') 
+    </section>
   @dump('archive')
 
   @dump($product)

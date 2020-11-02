@@ -17,6 +17,7 @@
 
 @import "components/buttons";
 @import "components/modal-cart";
+@import "components/modal-menu-burger";
 @import "components/home/menu-picto";
 @import "components/home/card-product";
 @import "components/comments";
@@ -27,10 +28,11 @@
 @import "components/bloc-pro-form";
 @import "components/bloc-pro-become-delivery";
 @import "components/wp-classes";
+
 @import "layouts/header";
+@import "layouts/header-mobile";
 @import "layouts/header-up";
 @import "layouts/sidebar";
-
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";

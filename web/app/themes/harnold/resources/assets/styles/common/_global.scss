@@ -86,3 +86,11 @@ ul{
   width: 100%;
   padding: 10px;
 }
+
+.is-fixe-mob{
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+}
