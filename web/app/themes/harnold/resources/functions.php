@@ -126,3 +126,14 @@ Container::getInstance()
 //  */
 // remove_action('woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20);
 // add_action('woocommerce_checkout_payment_view', 'woocommerce_checkout_payment', 10);
+
+add_action( 'after_setup_theme', 'register_menus');
+function register_menus() {
+    register_nav_menu( 'header', __ ( 'header', 'theme-slug' ) );
+}
+
+function my_myme_types($mime_types){
+    $mime_types['svg'] = 'image/svg+xml'; //Adding svg extension
+    return $mime_types;
+}
+add_filter('upload_mimes', 'my_myme_types', 1, 1);

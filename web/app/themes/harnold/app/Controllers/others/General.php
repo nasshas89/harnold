@@ -4,12 +4,13 @@ namespace App\Controllers\others;
 
 trait General {
 
-    public function header(){
+    public function header_menu(){
         return (object) [
-            'logo_header_transp' => (object) option('logo_header_transparent'),
-            'logo_header_color' => (object) option('logo_header_color'),
-            'hero_banniere' => (object) option('image_hero_home'),
-            'title_hero_home' => option('title_hero_home'),
+            'logo_header' => (object) option('logo_header'),
+            'info_1_header_up' => option('info_1_header_up'),
+            'text_1_header_up' => option('text_1_header_up'),
+            'text_2_header_up' => option('text_2_header_up'),
+            'picto_repeater' => (object) option('picto_repeater'),
 
         ];
     }

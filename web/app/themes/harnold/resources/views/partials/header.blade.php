@@ -2,22 +2,18 @@
     @include('partials.header-up')
     <div class="header-harnold__main wrapper">
         <div class="logo_header">
-            <img class="" src="@asset('images/harnold-logo-rose-horizontale.svg')" alt="Logo-Harnold" >
+        <img class="" src="{{$header_menu->logo_header->url}}" alt="Logo-Harnold" >
             <a class ="link-logo-header" href=""></a>
         </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="">Concept</a></li>
-                    <li><a href="">Livraison</a></li>
-                    <li><a href="">Recette/témoignage</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href=""><img  src="@asset('images/user.svg')" alt="Logo-Harnold" >Mon Compte</a></li>
-                    <li><a href="#" class="js-cart-click" href=""><img  src="@asset('images/shopping-cart.svg')" alt="Logo-Harnold" >Panier</a></li>
+                    @foreach ($header as $item)
+                        <li><a href="{{$item['url']}}">{{$item['title']}}</a></li>
+                    @endforeach
+                        <li><a href=""><img  src="@asset('images/user.svg')" alt="Logo-Harnold" >Mon Compte</a></li>
+                        <li><a href="#" class="js-cart-click" href=""><img  src="@asset('images/shopping-cart.svg')" alt="Logo-Harnold" >Panier</a></li>
                 </ul>
             </nav>
-            
-
-
         @if(is_page_template('views/template-pro.blade.php'))
             <nav class="menu-pro">
                 <ul>
@@ -30,6 +26,3 @@
     </div>    
 </section> 
 @include('home.modal-cart')
-
-
-

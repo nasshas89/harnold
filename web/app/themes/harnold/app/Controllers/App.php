@@ -118,6 +118,7 @@ class App extends Controller
         $args = array(
             'name__like' => 'legumes',
         );
+       
         $product_categories = get_terms('product_cat', $args);
         
         $count = count($product_categories);
@@ -165,6 +166,40 @@ class App extends Controller
                 
                 return   $posts;
             }
+        }
+    }
+
+    public function header() {
+        if(wp_get_nav_menu_items('Menu Header')) {
+            $menu = wp_get_nav_menu_items('Menu Header');
+
+            foreach($menu as $menu_item) {
+                if($menu_item->menu_item_parent == '0') {
+                    $nav_items[$menu_item->ID] = [
+                        'ID' => $menu_item->ID,
+                        'title' => $menu_item->title,
+                        'url' => $menu_item->url,
+                        'children' => [],
+                        'current' => get_the_ID() == $menu_item->object_id
+                    ];
+                } else {
+
+                    if($menu_item->menu_item_parent == $nav_items[$menu_item->menu_item_parent]['ID']) {
+                        $nav_items[$menu_item->menu_item_parent]['children'][] = [
+                            'ID' => $menu_item->ID,
+                            'title' => $menu_item->title,
+                            'url' => $menu_item->url,
+                            'parent_id' => $menu_item->menu_item_parent,
+                            'current' => get_the_ID() == $menu_item->object_id
+                        ];
+                    }
+                }
+            }
+
+            $nav_items = array_values($nav_items);
+           
+
+            return $nav_items;
         }
     }
 }
