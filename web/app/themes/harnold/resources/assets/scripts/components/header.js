@@ -27,7 +27,5 @@ export default {
       $('.header-harnold__main').removeClass('is-fixe-mob');
     }
   },
-  finalize() {
-
-  },
+  
 };

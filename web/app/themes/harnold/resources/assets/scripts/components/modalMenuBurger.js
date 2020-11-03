@@ -7,6 +7,7 @@ export default {
         
     burgerModal: function (event) {
         event.preventDefault();
-        console.log('oo')
+        $('.modal-menu-mobile').addClass('is-active');
+        $('body').addClass('hidden-scroll');
       },
   };
