@@ -7,7 +7,7 @@
   left: 0;
   z-index: 999;
   display: none;
-  padding: 50px 10px 15px;
+  padding: 45px 10px 15px;
   overflow: scroll;
 
   &__content {
@@ -29,7 +29,7 @@
     &__account {
       display: flex;
       flex-direction: row;
-      margin: 30px 0 40px;
+      margin: 30px 0 30px;
 
       a {
         margin-right: 25px;
@@ -51,7 +51,7 @@
       justify-content: space-between;
       align-items: center;
       width: 50%;
-      margin: 10px 0 10px;
+      margin: 15px 0 10px;
 
       &__picto {
         width: 40px;
@@ -79,7 +79,10 @@
         margin-bottom: 0;
 
         li {
-          margin-bottom: 40px;
+          width: 50%;
+          text-align: center;
+          padding: 15px 0 10px;
+          margin-bottom: 15px;
 
           a {
             text-align: center;

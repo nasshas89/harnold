@@ -9,11 +9,9 @@
         </div>
         <nav class="modal-menu-mobile__content__nav">
             <ul class="modal-menu-mobile__content__nav__list">
-                <li><a href="">Concept</a></li>
-                <li><a href="">Livraison</a></li>
-                <li><a href="">Recette</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+                @foreach ($header_mob as $item)
+                    <li><a href="{{$item['url']}}">{{$item['title']}}</a></li>
+                @endforeach
             </ul>
         </nav>
         <div class="modal-menu-mobile__content__social">

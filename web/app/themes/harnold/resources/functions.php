@@ -130,6 +130,7 @@ Container::getInstance()
 add_action( 'after_setup_theme', 'register_menus');
 function register_menus() {
     register_nav_menu( 'header', __ ( 'header', 'theme-slug' ) );
+    register_nav_menu( 'header-mob', __ ( 'header Mobil', 'theme-slug' ) );
 }
 
 function my_myme_types($mime_types){
