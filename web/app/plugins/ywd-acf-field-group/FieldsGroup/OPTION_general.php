@@ -42,8 +42,11 @@ class OPTION_general extends SingletonInit {
 				])->max(3),
 
 				
-
-
+				Tab::make('Hero Home'),
+				Text::make('Title Home 1','title_home_1'),
+				Text::make('Title Home 2','title_home_2'),
+				Text::make('Title Home 3','title_home_3'),
+				Image::make('Image Hero Home', 'img_hero_home')->returnFormat('array'),
                 
                 
 			]
