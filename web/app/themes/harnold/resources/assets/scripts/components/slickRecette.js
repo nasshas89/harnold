@@ -2,10 +2,12 @@ export default {
 
   init() {
     var slickOptions = {
-      arrows: false,
       centerMode: true,
       slidesToShow: 1,
-      dots: true,
+      dots: false,
+      arrows: true,
+      prevArrow: '<button class="sliderArrow sliderArrow--left"></button>',
+      nextArrow: '<button class="sliderArrow sliderArrow--right"></button>',
       mobileFirst: true,
 
       responsive: [{
@@ -22,7 +24,7 @@ export default {
         },
       ],
     };
-    
+
 
     // JavaScript to be fired on the home page
     $('.recette__slick').slick(slickOptions);
