@@ -12,10 +12,10 @@
  */
 // @import "~some-node-module";
 
-// $slick-font-path: "~slick-slider/slick/fonts/";
-// $slick-loader-path: "~slick-slider/slick/";
-// @import "~slick-slider/slick/slick.scss";
-// @import "~slick-slider/slick/slick-theme.scss";
+$slick-font-path: "~slick-slider/slick/fonts/";
+$slick-loader-path: "~slick-slider/slick/";
+@import "~slick-slider/slick/slick.scss";
+@import "~slick-slider/slick/slick-theme.scss";
 
 
 /** Import theme styles */

@@ -5,9 +5,14 @@
     &__slick{
         display: flex;
         justify-content: space-around;
+        padding: 0 ;
         &__card{
-            width: 30%;
-            background-color: green;
+            padding:0 10px;
+            p{
+                
+                background-color: green;
+                min-height: 100px;;
+            }   
         }
     }
 }

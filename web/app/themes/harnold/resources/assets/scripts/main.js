@@ -6,7 +6,7 @@ import './autoload/**/*'
 
 
 //Import slick-slider
-// import 'slick-slider/slick/slick.min';
+import 'slick-slider/slick/slick.min';
 
 // import local dependencies
 import Router from './util/Router';
