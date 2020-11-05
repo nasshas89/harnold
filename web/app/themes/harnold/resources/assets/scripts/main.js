@@ -4,6 +4,10 @@ import 'jquery';
 // Import everything from autoload
 import './autoload/**/*'
 
+
+//Import slick-slider
+// import 'slick-slider/slick/slick.min';
+
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';

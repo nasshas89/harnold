@@ -1,0 +1,13 @@
+.recette{
+    background-color: $bg-pink;
+    
+    padding: 25px 0;
+    &__slick{
+        display: flex;
+        justify-content: space-around;
+        &__card{
+            width: 30%;
+            background-color: green;
+        }
+    }
+}

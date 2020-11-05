@@ -21,51 +21,11 @@ export default {
       });
     });
 
-
-    /////////////////// product +/-
-    $(document).ready(function () {
-      $('.num-in span').click(function () {
-        var $input = $(this).parents('.num-block').find('input.in-num');
-        if ($(this).hasClass('minus')) {
-          var count = parseFloat($input.val()) - 1;
-          count = count < 1 ? 1 : count;
-          if (count < 2) {
-            $(this).addClass('dis');
-          } else {
-            $(this).removeClass('dis');
-          }
-          $input.val(count);
-        } else {
-          var counto = parseFloat($input.val()) + 1
-          $input.val(counto);
-          if (counto > 1) {
-            $(this).parents('.num-block').find(('.minus')).removeClass('dis');
-          }
-        }
-
-        $input.change();
-        return false;
-      });
-
-    });
-    // product +/-
-
-
-
-
     //   Function know more sur les carte product
     let showMoreButton = $('.texte-more');
     showMoreButton.on('click', this.showMore);
 
-    let clikos = $('.tablinks');
-    clikos.on('click', this.clickosFunction);
 
-  },
-
-  clickosFunction: function () {
-   
-    
-    
   },
 
   showMore: function () {
