@@ -4,6 +4,7 @@ import productCard from '../components/productCard';
 import circularNumber from '../components/circularNumber';
 import modalMenuBurger from '../components/modalMenuBurger';
 import slickRecette from '../components/slickRecette';
+import heightContent from '../components/heightContent';
 export default {
   init() {
     cartPopup.init();
@@ -12,6 +13,7 @@ export default {
     circularNumber.init();
     modalMenuBurger.init();
     slickRecette.init();
+    heightContent.init();
     // JavaScript to be fired on all pages
   },
   finalize() {

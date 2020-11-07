@@ -1,19 +1,185 @@
-.recette{
-    background-color: $bg-pink;
-    
-    padding: 25px 0;
-    &__slick{
-        display: flex;
-        justify-content: space-around;
-        padding: 0 ;
-        &__card{
-            padding:0 10px;
-            p{
-                
-                background-color: white;
-                min-height: 100px;;
-            }   
-        }
-    }
-}
+.recette {
+  background-color: #ffff;
+  padding: 50px 0;
 
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    padding: 2em 0;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1075px) {
+      padding: 1em 0;
+    }
+  }
+
+  &__slick {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    position: relative;
+
+    .sliderArrow {
+      position: relative;
+      border: none;
+      background-color: $primary;
+      opacity: 0.9;
+      border-radius: 100%;
+      height: 40px;
+      width: 40px;
+
+      &--right {
+        position: absolute;
+        top: 40%;
+        right: -20px;
+
+      }
+
+      &--left {
+        position: absolute;
+        top: 40%;
+        left: -20px;
+        z-index: 88;
+        // &::after {
+        //   content: url('../images/right-arrow(2).svg');
+        //   transform: scaleX(-1);
+        //   display: inline-flex;
+        //   width: 20px;
+        //   height: 20px;
+        //   margin: auto;
+        // }
+      }
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      cursor: pointer;
+      margin: 10px;
+      .link-recette{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      @media screen and (max-width: 1075px) {
+        margin: 5px;
+
+      }
+
+      &__img {
+        width: 100%;
+        position: relative;
+
+        &:hover{
+
+        }
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 230px;
+          border-radius: 8px 8px 0 0;
+        }
+
+        // &::after {
+        //   content: "";
+        //   display: block;
+        //   width: 100%;
+        //   height: 100%;
+        //   background-color: $primary-light;
+        //   position: absolute;
+        //   top: 0;
+        //   opacity: 0.4;
+        // }
+        .blog-type{
+          background-color: $primary;
+          z-index: 100;
+          padding: 5px 30px 5px 25px;
+          position: absolute;
+          font-weight: 900;
+          color: $text-blue;
+          text-decoration: none;
+          bottom: 0;
+          left: 0;
+          font-size: 12px;
+        }
+        .blog-date{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          background-color: $primary;
+          text-decoration: none;
+          border-radius: 100%;
+          height: 40px;
+          width: 40px;
+          z-index: 100;
+          top: 10px;
+          right: 10px;
+          font-size: 12px;
+        }
+      }
+
+      &__content {
+        padding: 15px 25px;
+        background-color: white;
+
+        .title-card-content {
+          font-weight: 900;
+          color: $text-blue;
+          font-family: $f-secondary;
+          font-size: 20px;
+          margin-bottom: 10px;
+          line-height: 1.2;
+        }
+
+        .autor-card-content {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          p {
+            font-weight: 700;
+            color: $text-blue;
+            font-family: $f-primary;
+            font-size: 15px;
+            margin-left: 10px;
+          }
+
+          &__img {
+            width: 30px;
+
+            img {
+              object-fit: cover;
+              width: 100%;
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.slick-current {
+  opacity: 1 !important;
+}
+.slick-slide {
+  opacity: 0.65;
+}

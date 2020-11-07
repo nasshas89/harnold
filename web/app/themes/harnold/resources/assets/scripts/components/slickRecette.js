@@ -4,22 +4,27 @@ export default {
     var slickOptions = {
       centerMode: true,
       slidesToShow: 1,
-      dots: false,
-      arrows: true,
-      prevArrow: '<button class="sliderArrow sliderArrow--left"></button>',
-      nextArrow: '<button class="sliderArrow sliderArrow--right"></button>',
+      dots: true,
+      
       mobileFirst: true,
+      adaptiveHeight: true,
 
       responsive: [{
           breakpoint: 580,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
+            adaptiveHeight: true,
           },
         },
         {
           breakpoint: 992,
           settings: {
             slidesToShow: 3,
+            slidesToScroll: 3,
+            adaptiveHeight: true,
+            arrows: true,
+      prevArrow: '<button class="sliderArrow sliderArrow--left"></button>',
+      nextArrow: '<button class="sliderArrow sliderArrow--right"></button>',
           },
         },
       ],
@@ -37,6 +42,7 @@ export default {
 
       }
     });
+    
 
 
   },
