@@ -20,7 +20,7 @@ $slick-loader-path: "~slick-slider/slick/";
 
 /** Import theme styles */
 @import "common/global";
-
+@import "components/sticky-promo";
 @import "components/buttons";
 @import "components/modal-cart";
 @import "components/modal-menu-burger";

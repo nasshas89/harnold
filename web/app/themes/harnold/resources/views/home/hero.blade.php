@@ -11,3 +11,4 @@
         <img class="hero-image-home" src="{{$header_menu->img_hero_home['url']}}" alt="picto menu">
     </div>
 </div>
+@include('components.sticky-promo')

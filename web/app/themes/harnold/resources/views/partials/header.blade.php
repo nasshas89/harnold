@@ -14,7 +14,7 @@
                     <li><a href="#" class="js-cart-click" href=""><img  src="@asset('images/shopping-cart.svg')" alt="Logo-Harnold" >Panier</a></li>
             </ul>
         </nav>
-
+        
         @if(is_page_template('views/template-pro.blade.php'))
             <nav class="menu-pro">
                 <ul>
@@ -25,6 +25,7 @@
             </nav>
        @endif
        @include('components.menu-header-mob')
-    </div>    
+    </div>
+    
 </section> 
 @include('components.modal-cart')

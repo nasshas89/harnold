@@ -85,7 +85,13 @@
 
         @media screen and (max-width: 1075px) {
           text-align: center;
-          width: 100%;
+          width: 60%;
+          margin: auto;
+        }
+        @media screen and (max-width: 665px) {
+          
+          width: 90%;
+          margin: auto;
         }
 
         span {

@@ -6,6 +6,7 @@
      <section class="wrapper"> 
      @include('home.menu-picto') 
     </section>
+   
     @include('home.block-recette-home') 
 @endsection
 
