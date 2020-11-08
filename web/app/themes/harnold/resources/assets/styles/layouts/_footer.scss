@@ -6,10 +6,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 30px 20px 40px;
 
     @media screen and (max-width: 900px) {
       flex-direction: column;
+      padding: 40px 20px 30px;
     }
 
     &__item {
@@ -19,9 +20,9 @@
       justify-content: center;
       align-items: center;
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 900px) {
         width: 60%;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
 
       &__title {
@@ -33,7 +34,7 @@
         font-size: 16px;
         font-family: $f-primary-bold;
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 900px) {
           margin-top: 15px;
           text-align: center;
           width: 100%;

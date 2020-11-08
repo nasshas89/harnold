@@ -15,6 +15,7 @@ use WordPlate\Acf\Fields\Text;
 use WordPlate\Acf\Fields\Tab;
 use WordPlate\Acf\Fields\Repeater;
 use WordPlate\Acf\Fields\Number;
+use WordPlate\Acf\Fields\Textarea;
 
 /**
  * Create a new class for each fields group
@@ -48,6 +49,14 @@ class OPTION_footer extends SingletonInit
                     Number::make('Chiffre', 'number_footer_banner'),
                     Text::make('Légende', 'add_legende'),
                 ])->max(4),
+
+                Tab::make('Présentation Banner Réassurance'),
+                Repeater::make('Elements descriptif', 'picto_repeater_reassurance')->fields([
+                    Image::make('Image Réassurance', 'picto_image_reassurance')->returnFormat('array'),
+                    Textarea::make('Texte réassurance', 'text_image_reassurance'),
+                ])->max(4),
+                
+
 
             ]
         ]);

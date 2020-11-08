@@ -10,6 +10,7 @@ class App extends Controller
 
     use ArchiveProduct;
     use others\General;
+    use others\Footer;
 
     public function siteName()
     {

@@ -1,33 +1,13 @@
 <footer class="footer">
     <div class="container footer__up">
-      <div class="footer__up__item">
-          <div class="footer__up__item__image">
-            <img src="@asset('images/cart-white.svg')" alt="">
-          </div>
-          <p class="footer__up__item__title">Issus des saisons</p>
-      
-      </div>
-      <div class="footer__up__item">
-          <div class="footer__up__item__image">
-            <img src="@asset('images/cagette.svg')" alt="">
-          </div>
-          <p class="footer__up__item__title">Issus de l’agriculture locale</p>
-      
-      </div>
-      <div class="footer__up__item">
-          <div class="footer__up__item__image">
-            <img src="@asset('images/legumes.svg')" alt="">
-          </div>
-          <p class="footer__up__item__title">Issue d'une agriculture biologiques</p>
-      
-      </div>
-      <div class="footer__up__item">
-          <div class="footer__up__item__image">
-            <img src="@asset('images/fruits.svg')" alt="">
-          </div>
-          <p class="footer__up__item__title">Issus de circuit cour donc frais</p>
-      
-      </div>
+      @foreach ($footer['picto_repeater'] as $item)
+        <div class="footer__up__item">
+            <div class="footer__up__item__image">
+              <img src="{{$item['picto_image_reassurance']['url']}}" alt="">
+            </div>
+            <p class="footer__up__item__title js-egalizeHeight">{{$item['text_image_reassurance']}}</p>
+        </div>
+      @endforeach
     </div>
     <div class="footer__down">
       <div class="container footer__down__content">
